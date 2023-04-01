@@ -1,0 +1,125 @@
+.App {
+  text-align: center;
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.connect {
+  position: fixed;
+  top: 24px;
+  right: 24px;
+}
+
+.register {
+  position: fixed;
+  top: 24px;
+  left: 24px;
+}
+
+.details {
+  z-index: 999px;
+  position: fixed;
+  top: 25%;
+  left: 0px;
+  width: 100%;
+}
+
+.detailsContainer {
+  background-color: #282c34;
+  border: 1px solid #fff;
+  border-radius: 14px;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  padding: 14px;
+}
+
+.registerUser {
+  z-index: 999px;
+  position: fixed;
+  top: 15%;
+  left: 0px;
+  width: 100%;
+}
+
+.regCont {
+  background-color: #282c34;
+  border: 1px solid #fff;
+  border-radius: 14px;
+  width: 50%;
+  margin: auto;
+  text-align: left;
+  padding: 14px;
+  text-align: center;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.imgCont {
+  border-radius: 14px;
+  border: 1px solid #fff;
+  overflow: hidden;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
+}
+
+.token-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: calc(3 * (220px + 10px));
+}
+
+.allImgs {
+  margin: 10px;
+  flex: 0 0 auto;
+}
+
+.closeUser {
+  margin-top: 7px;
+}
+
+.balance {
+  position: fixed;
+  bottom: 14px;
+  left: 24px;
+}
+
+input {
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  border-radius: 7px;
+  text-align: center;
+  color: #fff;
+  font-size: 1em;
+  padding: 3px 7px;
+  margin: 7px;
+}
+
+button p {
+  margin: 0px;
+  padding: 0px;
+}
+
+button {
+  padding: 7px 14px;
+  background-color: rgba(0,0,0,0);
+  border: 1px solid #fff;
+  border-radius: 7px;
+  color: #fff;
+  transition: 0.2s;
+}
+
+button:hover {
+  background-color: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+button:active {
+  background-color: rgba(255,255,255,0.4);
+  transform: translateY(2px);
+}
