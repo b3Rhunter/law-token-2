@@ -133,7 +133,6 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Users</h1>
       <button className="connect" onClick={connect}>
         {!connected && (
           <p>connect</p>
@@ -150,15 +149,20 @@ function App() {
       )}
 
       <button className="register" onClick={openReg}>Register User</button>
-      <button className="redeem" onClick={redeemTokens}>Redeem Tokens</button>
+
+      <div className="redeemContainer">
+      <div>
       <input
-                    type="number"
-                    min="0"
-                    step="1"
-                    placeholder="Amount"
-                    value={redeemAmount}
-                    onChange={(e) => setRedeemAmount(e.target.value)}
-                  />
+        type="number"
+        min="0"
+        step="1"
+        placeholder="Amount"
+        value={redeemAmount}
+        onChange={(e) => setRedeemAmount(e.target.value)}
+      />
+      </div>
+      <button className="redeem" onClick={redeemTokens}>Redeem Tokens</button>
+      </div>
       <div className="token-container">
         {tokens.map((token) => (
           <div className="allImgs" key={token.tokenId}>
@@ -184,9 +188,9 @@ function App() {
                     style={{transform: "translateY(3px)"}}
                   />
                   <button onClick={() => rewardUser(token.walletAddress, rewardAmount)}>Reward</button>
-                <div>
-                <button onClick={handleImageClick}>close</button>
-                </div>
+              
+                <button style={{marginLeft: "7px"}} onClick={handleImageClick}>close</button>
+              
                 </div>
               </div>
             )}
@@ -218,8 +222,9 @@ function App() {
 
                 <input placeholder="image link" type="text" value={imageURI} onChange={(e) => setImageURI(e.target.value)} />
               </div>
-              <button type="submit">Register</button>
+              
             </form>
+            <button style={{marginRight: "7px"}} type="submit">Register</button>
             <button className="closeUser" onClick={closeReg}>close</button>
           </div>
         </div>

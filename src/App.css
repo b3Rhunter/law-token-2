@@ -38,6 +38,7 @@
   margin: auto;
   text-align: left;
   padding: 14px;
+  box-shadow: 3px 3px 3px rgba(0,0,0,0.5);
 }
 
 .registerUser {
@@ -89,6 +90,26 @@
   left: 24px;
 }
 
+.redeemContainer {
+  position: fixed;
+  left: 24px;
+  bottom: 75px;
+  width: 150px;
+  border: 1px solid #fff;
+  border-radius: 7px;
+  padding: 7px;
+}
+
+.redeemContainer input {
+  width: 80%;
+  font-size: 14px;
+  text-align: center;
+  text-decoration: none;
+  padding: 3px 0px;
+  margin: 0px;
+  margin-bottom: 7px;
+}
+
 input {
   background-color: rgba(0,0,0,0);
   border: 1px solid #fff;
@@ -98,6 +119,11 @@ input {
   font-size: 1em;
   padding: 3px 7px;
   margin: 7px;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  display: none;
 }
 
 button p {
